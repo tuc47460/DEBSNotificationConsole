@@ -1,0 +1,10 @@
+C:\Users\Bobby\source\repos\DEBSNotificationConsole\DEBSNotificationConsole\bin\Debug\DEBSNotificationConsole.exe.config
+C:\Users\Bobby\source\repos\DEBSNotificationConsole\DEBSNotificationConsole\bin\Debug\DEBSNotificationConsole.exe
+C:\Users\Bobby\source\repos\DEBSNotificationConsole\DEBSNotificationConsole\bin\Debug\DEBSNotificationConsole.pdb
+C:\Users\Bobby\source\repos\DEBSNotificationConsole\DEBSNotificationConsole\bin\Debug\Utilities.dll
+C:\Users\Bobby\source\repos\DEBSNotificationConsole\DEBSNotificationConsole\bin\Debug\Utilities.pdb
+C:\Users\Bobby\source\repos\DEBSNotificationConsole\DEBSNotificationConsole\obj\Debug\DEBSNotificationConsole.csprojAssemblyReference.cache
+C:\Users\Bobby\source\repos\DEBSNotificationConsole\DEBSNotificationConsole\obj\Debug\DEBSNotificationConsole.csproj.CoreCompileInputs.cache
+C:\Users\Bobby\source\repos\DEBSNotificationConsole\DEBSNotificationConsole\obj\Debug\DEBSNotificationConsole.csproj.CopyComplete
+C:\Users\Bobby\source\repos\DEBSNotificationConsole\DEBSNotificationConsole\obj\Debug\DEBSNotificationConsole.exe
+C:\Users\Bobby\source\repos\DEBSNotificationConsole\DEBSNotificationConsole\obj\Debug\DEBSNotificationConsole.pdb

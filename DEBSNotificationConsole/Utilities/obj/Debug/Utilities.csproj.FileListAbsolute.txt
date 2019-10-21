@@ -1,0 +1,15 @@
+C:\Users\Bobby\Desktop\new\DigitalEducationBillingSystem\Utilities\bin\Debug\Utilities.dll
+C:\Users\Bobby\Desktop\new\DigitalEducationBillingSystem\Utilities\bin\Debug\Utilities.pdb
+C:\Users\Bobby\Desktop\new\DigitalEducationBillingSystem\Utilities\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Bobby\Desktop\new\DigitalEducationBillingSystem\Utilities\obj\Debug\Utilities.csproj.CoreCompileInputs.cache
+C:\Users\Bobby\Desktop\new\DigitalEducationBillingSystem\Utilities\obj\Debug\Utilities.csproj.CopyComplete
+C:\Users\Bobby\Desktop\new\DigitalEducationBillingSystem\Utilities\obj\Debug\Utilities.dll
+C:\Users\Bobby\Desktop\new\DigitalEducationBillingSystem\Utilities\obj\Debug\Utilities.pdb
+C:\Users\Bobby\Desktop\new\DigitalEducationBillingSystem\Utilities\obj\Debug\Utilities.csprojAssemblyReference.cache
+C:\Users\Bobby\source\repos\DEBSNotificationConsole\DEBSNotificationConsole\Utilities\bin\Debug\Utilities.dll
+C:\Users\Bobby\source\repos\DEBSNotificationConsole\DEBSNotificationConsole\Utilities\bin\Debug\Utilities.pdb
+C:\Users\Bobby\source\repos\DEBSNotificationConsole\DEBSNotificationConsole\Utilities\obj\Debug\Utilities.csprojAssemblyReference.cache
+C:\Users\Bobby\source\repos\DEBSNotificationConsole\DEBSNotificationConsole\Utilities\obj\Debug\Utilities.csproj.CoreCompileInputs.cache
+C:\Users\Bobby\source\repos\DEBSNotificationConsole\DEBSNotificationConsole\Utilities\obj\Debug\Utilities.csproj.CopyComplete
+C:\Users\Bobby\source\repos\DEBSNotificationConsole\DEBSNotificationConsole\Utilities\obj\Debug\Utilities.dll
+C:\Users\Bobby\source\repos\DEBSNotificationConsole\DEBSNotificationConsole\Utilities\obj\Debug\Utilities.pdb
