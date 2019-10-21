@@ -4,6 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//Console application for Digital Education Billing System Email Notification System
+//Written by Robert Convery
+//10/21/2019
+
 namespace DEBSNotificationConsole
 {
     class NotificationConsole
