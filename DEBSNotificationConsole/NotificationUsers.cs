@@ -12,16 +12,16 @@ namespace DEBSNotificationConsole
         public int NotificationUserID { get; set; }
         public int BillSent { get; set; }
         public int BillTimer { get; set; }
-        public string EmailAddress { get; set; }
+        public string TUID { get; set; }
 
         public NotificationUsers() { }//Empty Constructor
 
-        public NotificationUsers(int notificationUserID, int billSent, int billTimer, string emailAddress)
+        public NotificationUsers(int notificationUserID, int billSent, int billTimer, string tuid)
         {
             this.NotificationUserID = notificationUserID;
             this.BillSent = billSent;
             this.BillTimer = billTimer;
-            this.EmailAddress = emailAddress;
+            this.TUID = tuid;
         }//end constructor
 
         //Utils
@@ -44,7 +44,7 @@ namespace DEBSNotificationConsole
                         //localvar
                         NotificationUsers NU = new NotificationUsers
                             (int.Parse(dr["NotificationUserID"].ToString()), int.Parse(dr["BillSent"].ToString()), 
-                                int.Parse(dr["BillTimer"].ToString()), dr["EmailAddress"].ToString());
+                                int.Parse(dr["BillTimer"].ToString()), dr["TUID"].ToString());
 
                         //add to list
                         NList.Add(NU);

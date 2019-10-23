@@ -54,6 +54,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Receivable.cs" />
     <Compile Include="ReceivableDB.cs" />
+    <Compile Include="Staff.cs" />
+    <Compile Include="StaffDB.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

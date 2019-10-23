@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 namespace DEBSNotificationConsole
 {
     class NotificationConsole
-    { 
+    {
         static void Main(string[] args)
         {
 
@@ -19,14 +19,18 @@ namespace DEBSNotificationConsole
             NotificationTimer Timer = new NotificationTimer();
             List<Receivable> RList = new List<Receivable>();
             List<NotificationUsers> NList = new List<NotificationUsers>();
+            List<Staff> SList = new List<Staff>();
 
             //get timer
             Timer = GetNotificationTimer();
 
+            //get staff list
+            SList = GetStaffList();
+
             //get user notification list
             NList = GetUserNotificationList();
 
-            //reduce List to checked uers
+            //reduce List to checked users
             NList = GetCheckedUsersList(NList);
 
             //get receivable list
@@ -34,11 +38,30 @@ namespace DEBSNotificationConsole
             RList = GetTimedOutReceivablesList(Timer, RList);
 
             //send emails
-            SendEmails(RList, NList);
-            
+            SendEmails(RList, NList, SList);
+
+            Console.ReadKey();
+
         }//end main
 
-        private static void SendEmails(List<Receivable> RList, List<NotificationUsers> NList)
+        private static List<Staff> GetStaffList()
+        {
+            List<Staff> SList;
+            Console.WriteLine("Attempting to get Staff List...");
+            SList = Staff.GetAllStaff();
+            if (SList.Count > 0)
+            {
+                Console.WriteLine("Staff List = SUCCESS");
+            }//end if
+            else
+            {
+                Console.WriteLine("Staff List = FAILED");
+            }//end else
+
+            return SList;
+        }
+
+        private static void SendEmails(List<Receivable> RList, List<NotificationUsers> NList, List<Staff> SList)
         {
             Console.WriteLine("Starting to send emails...");
             foreach (Receivable r in RList)
@@ -50,18 +73,23 @@ namespace DEBSNotificationConsole
 
                 foreach (NotificationUsers NU in NList)
                 {
-                    if (Email.SendEmail("Notifications@Temple.edu", "DO NOT REPLY", emailTitle, emailBody, NU.EmailAddress))
+                    //local var
+                    Staff staff = new Staff();
+
+                    //get staff info
+                    staff = Staff.GetStaffByTUID(NU.TUID);
+
+                    if (Email.SendEmail("Notifications@Temple.edu", "DO NOT REPLY", emailTitle, emailBody, staff.Email))
                     {
-                        Console.WriteLine("Email Sent successfully to " + NU.EmailAddress + " for Project " + p.ProjectID);
+                        Console.WriteLine("Email Sent successfully to " + staff.Email + " for Project " + p.ProjectID);
                     }//end if 
                 }//end foreach inner
-
             }//end foreach outter
-        }
+        }//end SendEmails
 
         private static Project GetProjectInfo(Receivable r)
         {
-            Console.WriteLine("Attemping to get Project info for Project " + r.ProjectID);
+            Console.WriteLine("Attempting to get Project info for Project " + r.ProjectID);
             Project p = Project.GetProjectByID(r.ProjectID);
             if (p != null)
             {

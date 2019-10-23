@@ -16,8 +16,8 @@ namespace DEBSNotificationConsole
                 //local var
                 MailMessage mailMessage = new MailMessage();
                 MailAddress fromAddress = new MailAddress(fromEmail, displayEmail);
-                //SmtpClient smtpClient = new SmtpClient("localhost", 25);
-                SmtpClient smtpClient = new SmtpClient("smtp.temple.edu", 25);
+                SmtpClient smtpClient = new SmtpClient("localhost", 25);
+                //SmtpClient smtpClient = new SmtpClient("smtp.temple.edu", 25);
 
 
 
